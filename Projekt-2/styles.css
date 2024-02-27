@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+:root {
+  --headerBg: #15304c;
+  --menuText: #fff;
+  --GrifindorYellow: #eeba30;
+}
+
+body {
+  background-color: var(--headerBg);
+}
+
+h1 {
+  color: var(--GrifindorYellow);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  color: var(--menuText);
+  font-size: 1.5rem;
+}
+
+header {
+  height: 70px;
+  background-color: var(--headerBg);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: var(--menuText);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #eeba30;
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+/* Main - index*/
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: calc(100vh - 105px);
+  background: linear-gradient(rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5)),
+    url("img/background.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  margin-top: 2rem;
+  background-color: var(--headerBg);
+  border-radius: 15px;
+}
+
+.btn a {
+  display: block;
+  color: var(--GrifindorYellow);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid var(--GrifindorYellow);
+  border-radius: 15px;
+}
+.btn a:hover {
+  color: var(--headerBg);
+  background-color: var(--GrifindorYellow);
+}
+
+/* Main - about */
+
+.welcome-about {
+  width: 100%;
+  /* height: calc(100vh - 70px); */
+  background-color: var(--headerBg);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  width: 80%;
+  background-color: var(--headerBg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card h2 {
+  color: var(--GrifindorYellow);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.card {
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 400px;
+  height: 375px;
+  border: 1px solid var(--GrifindorYellow);
+}
+
+.image-container {
+  width: 380px;
+  height: 220px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* main - contact */
+
+.welcome-contact {
+  height: calc(100vh - 105px);
+  background: linear-gradient(rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5)),
+    url("img/aditya-vyas-wmXVABZ7JBk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 80%;
+  max-width: 600px;
+  margin-left: 10rem;
+}
+
+.input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 5px solid var(--GrifindorYellow);
+  color: var(--GrifindorYellow);
+  background: transparent;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  color: var(--GrifindorYellow);
+  font-weight: 700;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 10px 0;
+  color: var(--GrifindorYellow);
+  outline: none;
+  background: transparent;
+  border: 5px solid var(--GrifindorYellow);
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 5px solid var(--GrifindorYellow);
+  background: var(--GrifindorYellow);
+  color: var(--headerBg);
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+textarea:focus ~ label,
+input:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+footer {
+  height: 35px;
+  padding-top: 12px;
+}
+
+footer p {
+  font-size: 12px;
+  color: var(--GrifindorYellow);
+  text-align: center;
+}
